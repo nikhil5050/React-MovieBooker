@@ -4,8 +4,8 @@ import { addShow, getNowPlayingMovies, getShow, getShows } from "../controllers/
 const showRouter = express.Router();
 
 
-showRouter.get('/now-playing',getNowPlayingMovies)
-showRouter.post('/add', addShow)
+showRouter.get('/now-playing',getNowPlayingMovies);
+showRouter.post('/add', addShow);
 showRouter.get('/all', getShows);
 showRouter.get('/:movieId', getShow);
 
